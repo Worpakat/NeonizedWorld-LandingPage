@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neonized World</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="top-bar-main-cta">
+
+        <div class="logo-company-cta">
+            <div class="logo-cta">
+                <img src="images/logo-pink.svg" alt="logo">
+                <span>W</span>
+            </div>
+            <h2>WORPAKAT <span>INC.</span></h2>
+        </div>
+
+        <svg id="open-menu-btn" onclick="openNav()" xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg> <!-- menu icon  -->
+
+        <div id="navMenu" class="nav-menu">
+            <nav>
+                <svg id="close-menu-btn" onclick="closeNav()" xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+                </svg>
+                <ul>
+                    <li><a class="neon-txt-pink" href="">HOME</a></li>
+                    <li><a class="neon-txt-pink" href="">SERVICES</a></li>
+                    <li><a class="neon-txt-pink" href="">ABOUT</a></li>
+                    <li><a class="neon-txt-pink" href="">CONNECT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="side-bar-outer-bg"></div>
+
+    </div>
+
+    <div class="top-bottom-line"></div>
+    
+    <main>
+        <div class="container">
+            <div class="left-cta">
+                <h1 class="hero-head"><span>NEONIZED</span><br>
+                    WORLD</h1>
+                <h2 class="slogan">The good of the <span class="major">majority</span> or
+                    suffocating in <span class="indi">individualism</span>...</h2>
+                <a href="">Make your choice.</a>
+            </div>
+
+            <div class="right-cta">
+                
+                <div class="elif-cta">
+                    <svg id="elif-letter" viewBox="0 0 100 500" xmlns="http://www.w3.org/2000/svg">
+                        <path id="elif" d="M 40.04 260.899 C 36.918 177.568 32.11 89.739 31.874 53.937 C 31.637 41.509 26.066 41.373 26.066 41.373 C 26.066 41.373 45.376 0 45.376 0 C 45.376 0 49.568 11.746 53.614 24.193 C 59.114 41.081 66.354 63.481 71.09 80.856 C 74.63 93.81 76.717 104.153 75.883 106.413 C 75.719 107.055 58.387 86.349 58.387 86.349 C 58.387 86.349 58.714 122.093 60.765 171.452 C 65.665 289.707 74.212 479.548 41.401 500 C 43.67 465.425 43.815 361.682 40.04 260.899 Z" style="fill-rule: nonzero; stroke-width: 5px; fill: none; stroke: rgb(5, 217, 232);" transform="matrix(1, 0, 0, 1, 0, 7.105427357601002e-15)"/>
+                    </svg>
+                </div>
+
+                <div class="writings-cta">
+                    <h2 id="brand">Worpakat</h2>
+                    <h2 id="number">52-0-25</h2>
+                </div>
+
+                <div class="seashell-cta">
+                    <img src="images/seashell-2.svg" alt="">
+                </div>
+                <div class="shell-bg"></div>
+            </div>
+
+            <div class="bottom-cta">
+                <p class="date">2023 - 2024</p>
+            </div>
+        </div>
+
+        <div class="top-bottom-line"></div>
+    </main>
+
+    <footer>
+        <p class="copyright">© 2023 Worpakat Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- Side Nav Menu Open/Close Scripts -->
+    <script>
+        /*Side_Bar_Menu_Controls*/
+        const sideBarOuterBG = document.querySelector(".side-bar-outer-bg")
+        const navMenu = document.getElementById("navMenu")
+
+        function openNav() {
+            navMenu.classList.toggle("open");
+            sideBarOuterBG.style.opacity = 0.8;
+            sideBarOuterBG.style.pointerEvents = "auto";
+        }
+
+        function closeNav() {
+            navMenu.classList.toggle("open");
+            sideBarOuterBG.style.opacity = 0;
+            sideBarOuterBG.style.pointerEvents = "none";
+
+        }
+    </script>
+</body>
+
+</html>
